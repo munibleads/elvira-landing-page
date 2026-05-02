@@ -5,24 +5,33 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elvira AI | Smart Infrastructure & AI</title>
+  <title>Elvira AI | Custom AI Agents for Enterprise</title>
+  <meta name="description" content="Elvira builds custom AI agents that transform how Saudi enterprises operate — from customer service to operations, across every industry.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-  <!-- Global Navigation -->
-  <header class="navbar">
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
     <div class="navbar-container">
       <a href="index.html" class="logo">
-        <img src="/logolong.png" alt="Elvira Tech Logo" class="logo-img">
+        <img src="/logolong.png" alt="Elvira AI" class="logo-img">
       </a>
       <nav>
-        <ul class="nav-links">
-          <li><a href="smart-waste.html">Smart Waste</a></li>
-          <li><a href="ai-solutions.html">AI Solutions</a></li>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#use-cases">Use Cases</a></li>
+          <li><a href="#process">How It Works</a></li>
           <li><a href="#footer">Contact</a></li>
         </ul>
       </nav>
+      <div class="nav-actions">
+        <a href="mailto:sales@elvirasa.com" class="btn-nav-cta">Book a Demo</a>
+      </div>
       <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -32,36 +41,451 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero tech-dot-grid">
+  <section class="hero">
     <canvas id="hero-canvas"></canvas>
-    <div class="hero-content">
-      <h1>Intelligence on the Edge.</h1>
-      <p class="hero-sub">Empowering urban efficiency through advanced IoT and enterprise-grade artificial intelligence
-        solutions.</p>
+    <div class="hero-inner">
+      <h1>Custom AI Agents<br>Built for <span class="text-gradient">Enterprise</span></h1>
+      <p class="hero-sub">We build intelligent AI agents that automate complex workflows, unlock data-driven decisions, and transform how your organization operates — across every industry.</p>
+      <div class="hero-actions">
+        <a href="mailto:sales@elvirasa.com" class="btn-primary-hero">Book a Demo</a>
+        <a href="#use-cases" class="btn-secondary-hero">Explore Use Cases <span>→</span></a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span></span>
     </div>
   </section>
 
-  <!-- Division Split -->
-  <section class="divisions" id="solutions">
-    <!-- Division A: Smart Waste -->
-    <a href="smart-waste.html" class="division-card division-waste">
-      <div class="division-bg"></div>
-      <div class="division-content">
-        <h2>Smart Waste Management</h2>
-        <p>Sustainability, IoT, and Urban Efficiency.</p>
-        <span class="explore-link">Explore Hardware <span>&rarr;</span></span>
-      </div>
-    </a>
+  <!-- Trust Strip -->
+  <div class="trust-strip">
+    <div class="container">
+      <p class="trust-label">Works with leading AI models</p>
+      <div class="models-row">
 
-    <!-- Division B: AI Solutions -->
-    <a href="ai-solutions.html" class="division-card division-ai">
-      <div class="division-bg"></div>
-      <div class="division-content">
-        <h2>Elvira AI Solutions</h2>
-        <p>RAGs, Custom LLMs, and Enterprise Automation.</p>
-        <span class="explore-link">Explore Software <span>&rarr;</span></span>
+        <!-- OpenAI -->
+        <div class="model-item">
+          <svg class="model-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .392-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.494 4.494zM3.6 18.304a4.47 4.47 0 0 1-.535-3.014l.142.085 4.783 2.759a.771.771 0 0 0 .78 0l5.843-3.369v2.332a.08.08 0 0 1-.033.062L9.74 19.95a4.5 4.5 0 0 1-6.14-1.646zM2.34 7.896a4.485 4.485 0 0 1 2.366-1.973V11.6a.766.766 0 0 0 .388.676l5.815 3.355-2.02 1.168a.076.076 0 0 1-.071 0l-4.83-2.786A4.504 4.504 0 0 1 2.34 7.896zm16.597 3.855l-5.833-3.387 2.006-1.164a.076.076 0 0 1 .071 0l4.83 2.791a4.494 4.494 0 0 1-.676 8.105v-5.678a.79.79 0 0 0-.407-.667zm2.01-3.023l-.141-.085-4.774-2.782a.776.776 0 0 0-.785 0L9.409 9.23V6.897a.066.066 0 0 1 .028-.061l4.83-2.787a4.5 4.5 0 0 1 6.68 4.66zm-12.64 4.135l-2.02-1.164a.08.08 0 0 1-.038-.057V6.075a4.5 4.5 0 0 1 7.375-3.453l-.142.08L8.704 5.46a.795.795 0 0 0-.393.681zm1.097-2.365l2.602-1.5 2.607 1.5v2.999l-2.597 1.5-2.607-1.5z"/>
+          </svg>
+          <span>OpenAI</span>
+        </div>
+
+        <div class="model-divider"></div>
+
+        <!-- Anthropic -->
+        <div class="model-item">
+          <svg class="model-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.308 4h-3.026l-5.282 16h2.984l1.15-3.48h5.828l1.15 3.48H23zM13.8 14.08l2.008-6.088 2.01 6.088zm-8.56-5.032L3.135 4H0l5.282 16h2.85z"/>
+          </svg>
+          <span>Anthropic</span>
+        </div>
+
+        <div class="model-divider"></div>
+
+        <!-- Gemini -->
+        <div class="model-item">
+          <svg class="model-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C12 7.667 7.667 12 2 12c5.667 0 10 4.333 10 10 0-5.667 4.333-10 10-10-5.667 0-10-4.333-10-10z"/>
+          </svg>
+          <span>Gemini</span>
+        </div>
+
+        <div class="model-divider"></div>
+
+        <!-- Claude -->
+        <div class="model-item">
+          <img src="/claude-logo.svg" class="model-icon" alt="Claude">
+          <span>Claude</span>
+        </div>
+
+        <div class="model-divider"></div>
+
+        <!-- DeepSeek -->
+        <div class="model-item">
+          <img src="/deepseek-logo-icon.svg" class="model-icon" alt="DeepSeek">
+          <span>DeepSeek</span>
+        </div>
+
+        <div class="model-divider"></div>
+
+        <!-- Kimi -->
+        <div class="model-item">
+          <img src="/kimi.svg" class="model-icon" alt="Kimi">
+          <span>Kimi</span>
+        </div>
+
       </div>
-    </a>
+    </div>
+  </div>
+
+  <!-- What We Build Section -->
+  <section class="section-what" id="solutions">
+    <div class="container">
+      <div class="section-eyebrow">What We Build</div>
+      <div class="section-header-row">
+        <div>
+          <h2 class="section-title">AI agents that understand<br>your business</h2>
+        </div>
+        <p class="section-sub">Elvira builds custom AI agents deeply integrated into your processes, data, and workflows — not off-the-shelf tools.</p>
+      </div>
+      <div class="what-grid">
+        <div class="what-card">
+          <div class="what-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Custom AI Agent Development</h3>
+          <p>Purpose-built agents trained on your data, integrated with your systems, and designed to handle your most complex workflows end-to-end.</p>
+        </div>
+        <div class="what-card">
+          <div class="what-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+          </div>
+          <h3>AI Workflow Automation</h3>
+          <p>Automate repetitive, high-volume tasks across departments — from document processing to customer communications — without replacing your existing stack.</p>
+        </div>
+        <div class="what-card">
+          <div class="what-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>
+          </div>
+          <h3>Multi-Agent Orchestration</h3>
+          <p>Deploy interconnected networks of specialized AI agents that collaborate to solve complex enterprise challenges at scale, with full auditability.</p>
+        </div>
+        <div class="what-card">
+          <div class="what-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>AI Integration Services</h3>
+          <p>Seamlessly connect AI capabilities to your existing ERP, CRM, and enterprise systems — no rip-and-replace, just intelligent augmentation.</p>
+        </div>
+        <div class="what-card">
+          <div class="what-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>RAG-Powered Knowledge Agents</h3>
+          <p>Give your teams instant access to institutional knowledge — internal documents, policies, and data — through intelligent retrieval-augmented AI agents.</p>
+        </div>
+        <div class="what-card">
+          <div class="what-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>AI Transformation Strategy</h3>
+          <p>Strategic guidance to identify the highest-ROI AI opportunities in your organization, build a roadmap, and execute with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases Section -->
+  <section class="section-usecases" id="use-cases">
+    <div class="container">
+      <div class="section-eyebrow">Use Cases</div>
+      <div class="section-header-row">
+        <div>
+          <h2 class="section-title">One platform.<br>Every business function.</h2>
+        </div>
+        <p class="section-sub">Custom AI agents that drive measurable outcomes across your entire organization — deployed in weeks.</p>
+      </div>
+
+      <div class="uc-bento">
+
+        <!-- Card 1: Sales Intelligence — WIDE -->
+        <div class="uc-card uc-wide">
+          <div class="uc-vis vis-sales">
+            <div class="vis-sales-inner">
+              <div class="chart-header">
+                <span class="chart-label">Leads Qualified This Week</span>
+                <span class="chart-trend">↑ 34%</span>
+              </div>
+              <div class="chart-bars">
+                <div class="chart-bar-wrap"><div class="chart-bar" style="--h:55%"></div><span>Mon</span></div>
+                <div class="chart-bar-wrap"><div class="chart-bar" style="--h:72%"></div><span>Tue</span></div>
+                <div class="chart-bar-wrap"><div class="chart-bar" style="--h:61%"></div><span>Wed</span></div>
+                <div class="chart-bar-wrap"><div class="chart-bar" style="--h:85%"></div><span>Thu</span></div>
+                <div class="chart-bar-wrap"><div class="chart-bar cb-active" style="--h:100%"></div><span>Fri</span></div>
+                <div class="chart-bar-wrap"><div class="chart-bar" style="--h:47%"></div><span>Sat</span></div>
+              </div>
+              <div class="chart-stat-pill">247 leads processed today</div>
+            </div>
+          </div>
+          <div class="uc-body">
+            <div class="uc-tag">Sales & Revenue</div>
+            <h3>Sales Intelligence Agent</h3>
+            <p>Researches prospects, qualifies leads, and surfaces buying signals — giving every sales rep 10× more capacity, automatically.</p>
+            <div class="uc-outcome"><strong>10×</strong> rep capacity &nbsp;·&nbsp; <strong>40%</strong> more pipeline</div>
+          </div>
+        </div>
+
+        <!-- Card 2: Customer Support — NARROW -->
+        <div class="uc-card uc-narrow">
+          <div class="uc-vis vis-support">
+            <div class="chat-wrap">
+              <div class="chat-msg chat-in">
+                <div class="chat-av"></div>
+                <div class="chat-bub">كيف أتتبع طلبيتي؟</div>
+              </div>
+              <div class="chat-msg chat-out">
+                <div class="chat-bub">طلبك #4821 في الطريق ويصل غداً ✓</div>
+              </div>
+              <div class="chat-msg chat-in">
+                <div class="chat-av"></div>
+                <div class="chat-bub">Perfect, thank you!</div>
+              </div>
+              <div class="chat-time-pill">⚡ Response in 1.2s</div>
+            </div>
+          </div>
+          <div class="uc-body">
+            <div class="uc-tag">Customer Experience</div>
+            <h3>Customer Support Agent</h3>
+            <p>24/7 support in Arabic & English. Instant responses, smart escalation, zero wait times.</p>
+            <div class="uc-outcome"><strong>70%</strong> ticket deflection</div>
+          </div>
+        </div>
+
+        <!-- Card 3: Document Processing — NARROW -->
+        <div class="uc-card uc-narrow">
+          <div class="uc-vis vis-docs">
+            <div class="doc-mock">
+              <div class="doc-mock-header">
+                <div class="doc-mock-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FF8D30" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                </div>
+                <span>Invoice_Q2_2026.pdf</span>
+              </div>
+              <div class="doc-mock-fields">
+                <div class="doc-field"><span class="df-key">Vendor</span><span class="df-val extracted">Al Rajhi Corp</span></div>
+                <div class="doc-field"><span class="df-key">Amount</span><span class="df-val extracted">SAR 248,000</span></div>
+                <div class="doc-field"><span class="df-key">Due Date</span><span class="df-val extracted">May 15, 2026</span></div>
+                <div class="doc-field"><span class="df-key">Status</span><span class="df-val df-ok">✓ Approved</span></div>
+              </div>
+              <div class="doc-ai-badge">AI Extracted in 0.8s</div>
+            </div>
+          </div>
+          <div class="uc-body">
+            <div class="uc-tag">Finance & Operations</div>
+            <h3>Document Processing Agent</h3>
+            <p>Extracts and validates invoices, contracts, and financial documents with 99%+ accuracy.</p>
+            <div class="uc-outcome"><strong>99%+</strong> accuracy &nbsp;·&nbsp; <strong>85%</strong> time saved</div>
+          </div>
+        </div>
+
+        <!-- Card 4: Business Analytics — WIDE -->
+        <div class="uc-card uc-wide">
+          <div class="uc-vis vis-analytics">
+            <div class="analytics-inner">
+              <div class="analytics-prompt">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                <span>Show revenue breakdown by region this quarter</span>
+              </div>
+              <svg class="line-svg" viewBox="0 0 320 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="lg1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#FF8D30" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#FF8D30" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,80 C30,75 50,65 80,55 C110,45 130,38 160,28 C190,18 210,13 240,8 C270,4 295,3 320,1" stroke="#FF8D30" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M0,80 C30,75 50,65 80,55 C110,45 130,38 160,28 C190,18 210,13 240,8 C270,4 295,3 320,1 L320,90 L0,90Z" fill="url(#lg1)"/>
+              </svg>
+              <div class="analytics-kpis">
+                <div class="a-kpi"><span class="a-val">+34%</span><span class="a-lbl">Revenue Growth</span></div>
+                <div class="a-kpi"><span class="a-val">SAR 4.2M</span><span class="a-lbl">Q2 Total</span></div>
+                <div class="a-kpi"><span class="a-val">Riyadh</span><span class="a-lbl">Top Region</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="uc-body">
+            <div class="uc-tag">Data & Analytics</div>
+            <h3>Business Intelligence Agent</h3>
+            <p>Answer complex business questions in plain language. Query your data warehouse, get instant charts and insights — no SQL required.</p>
+            <div class="uc-outcome"><strong>Instant</strong> answers &nbsp;·&nbsp; <strong>Zero</strong> SQL required</div>
+          </div>
+        </div>
+
+        <!-- Card 5: HR Automation — THIRD -->
+        <div class="uc-card uc-third">
+          <div class="uc-vis vis-hr">
+            <div class="hr-inner">
+              <div class="cand-card">
+                <div class="cand-av ca1"></div>
+                <div class="cand-meta"><div class="cand-name">Sarah A.</div><div class="cand-role">Product Manager</div></div>
+                <div class="cand-badge badge-yes">Qualified</div>
+              </div>
+              <div class="cand-card">
+                <div class="cand-av ca2"></div>
+                <div class="cand-meta"><div class="cand-name">Omar K.</div><div class="cand-role">Data Analyst</div></div>
+                <div class="cand-badge badge-review">Review</div>
+              </div>
+              <div class="cand-card">
+                <div class="cand-av ca3"></div>
+                <div class="cand-meta"><div class="cand-name">Nora M.</div><div class="cand-role">UX Designer</div></div>
+                <div class="cand-badge badge-yes">Qualified</div>
+              </div>
+              <div class="hr-stat-pill">94 CVs screened in 2 min</div>
+            </div>
+          </div>
+          <div class="uc-body">
+            <div class="uc-tag">Human Resources</div>
+            <h3>HR Automation Agent</h3>
+            <p>Screens CVs, schedules interviews, and manages onboarding — fully automated end-to-end.</p>
+            <div class="uc-outcome"><strong>90%</strong> faster hiring cycles</div>
+          </div>
+        </div>
+
+        <!-- Card 6: Operations — THIRD -->
+        <div class="uc-card uc-third">
+          <div class="uc-vis vis-ops">
+            <div class="ops-inner">
+              <div class="ops-ring-wrap">
+                <svg class="ops-ring-svg" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="7"/>
+                  <circle cx="50" cy="50" r="38" fill="none" stroke="#FF8D30" stroke-width="7"
+                    stroke-linecap="round" stroke-dasharray="213" stroke-dashoffset="22"
+                    transform="rotate(-90 50 50)"/>
+                </svg>
+                <div class="ops-ring-label"><span class="ops-pct">94%</span><span class="ops-sublbl">On-Time</span></div>
+              </div>
+              <div class="ops-stats">
+                <div class="ops-stat"><span class="os-val">↓ 23%</span><span class="os-lbl">Delays</span></div>
+                <div class="ops-stat"><span class="os-val">↑ 18%</span><span class="os-lbl">Throughput</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="uc-body">
+            <div class="uc-tag">Supply Chain & Ops</div>
+            <h3>Operations Monitor</h3>
+            <p>Tracks supply chain health and proactively surfaces risks before they become costly disruptions.</p>
+            <div class="uc-outcome"><strong>23%</strong> fewer delays</div>
+          </div>
+        </div>
+
+        <!-- Card 7: Compliance — THIRD -->
+        <div class="uc-card uc-third">
+          <div class="uc-vis vis-compliance">
+            <div class="comp-inner">
+              <div class="comp-item comp-done"><div class="comp-chk">✓</div><span>Data residency verified</span></div>
+              <div class="comp-item comp-done"><div class="comp-chk">✓</div><span>PDPL compliance check</span></div>
+              <div class="comp-item comp-done"><div class="comp-chk">✓</div><span>Contract risk scan</span></div>
+              <div class="comp-item comp-active"><div class="comp-chk comp-running">→</div><span>Audit report generation</span></div>
+              <div class="comp-badge-pill">Auto-monitored 24/7</div>
+            </div>
+          </div>
+          <div class="uc-body">
+            <div class="uc-tag">Legal & Compliance</div>
+            <h3>Compliance Agent</h3>
+            <p>Monitors regulatory changes and auto-generates audit reports aligned with Saudi regulations.</p>
+            <div class="uc-outcome"><strong>100%</strong> audit trail</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section-process" id="process">
+    <div class="container">
+      <div class="section-eyebrow">How It Works</div>
+      <h2 class="section-title">From idea to deployed<br>agent in weeks — not months</h2>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h3>Discover</h3>
+          <p>We map your workflows, identify the highest-impact automation opportunities, and define clear success metrics together.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h3>Design</h3>
+          <p>We architect the agent system, select the right AI models, and design the integrations needed for your existing stack.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h3>Build & Test</h3>
+          <p>We develop, test, and refine the agents against your real data and workflows before any production deployment.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <h3>Deploy & Optimize</h3>
+          <p>We deploy with full monitoring, provide ongoing optimization, and scale the system as your needs grow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enterprise Trust Section -->
+  <section class="section-enterprise">
+    <div class="container">
+      <div class="enterprise-inner">
+        <div class="enterprise-text">
+          <div class="section-eyebrow">Enterprise Grade</div>
+          <h2 class="section-title">Built for Saudi enterprise<br>requirements</h2>
+          <p>We understand the unique requirements of Saudi enterprises — from regulatory compliance to Arabic language support and local data sovereignty.</p>
+          <div class="enterprise-features">
+            <div class="enterprise-feature">
+              <div class="feature-check">✓</div>
+              <span>Full Arabic & English language support</span>
+            </div>
+            <div class="enterprise-feature">
+              <div class="feature-check">✓</div>
+              <span>On-premise & private cloud deployment</span>
+            </div>
+            <div class="enterprise-feature">
+              <div class="feature-check">✓</div>
+              <span>Compliant with Saudi data regulations</span>
+            </div>
+            <div class="enterprise-feature">
+              <div class="feature-check">✓</div>
+              <span>Full source code ownership</span>
+            </div>
+            <div class="enterprise-feature">
+              <div class="feature-check">✓</div>
+              <span>Integrates with SAP, Oracle, Salesforce & more</span>
+            </div>
+            <div class="enterprise-feature">
+              <div class="feature-check">✓</div>
+              <span>Dedicated implementation & support team</span>
+            </div>
+          </div>
+        </div>
+        <div class="enterprise-visual">
+          <div class="enterprise-card-stack">
+            <div class="e-card e-card-1">
+              <div class="e-card-dot active-dot"></div>
+              <div class="e-card-label">AI Agent Active</div>
+              <div class="e-card-metric">2,847</div>
+              <div class="e-card-sub">Tasks automated today</div>
+            </div>
+            <div class="e-card e-card-2">
+              <div class="e-card-label">Accuracy Rate</div>
+              <div class="e-card-metric">94%</div>
+              <div class="e-card-sub">Across all deployments</div>
+            </div>
+            <div class="e-card e-card-3">
+              <div class="e-card-label">Time Saved</div>
+              <div class="e-card-metric">6.2h</div>
+              <div class="e-card-sub">Per employee, per day</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-cta">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="section-eyebrow light">Get Started</div>
+        <h2 class="section-title">Ready to transform your<br>business with AI?</h2>
+        <p>Book a discovery call with our team. We'll identify your highest-value AI opportunities and show you exactly how Elvira can help.</p>
+        <div class="cta-actions">
+          <a href="mailto:sales@elvirasa.com" class="btn-cta-primary">Book a Demo</a>
+          <a href="mailto:sales@elvirasa.com" class="btn-cta-ghost">sales@elvirasa.com →</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -70,55 +494,56 @@
       <div class="footer-content">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="/logolong.png" alt="Elvira Tech Logo" class="logo-img">
+            <img src="/logolong.png" alt="Elvira AI" class="logo-img footer-logo-img">
           </div>
-          <p>Empowering urban efficiency through advanced IoT and enterprise-grade artificial intelligence solutions.
-          </p>
+          <p>Custom AI agents for enterprise transformation.<br>Based in Saudi Arabia.</p>
         </div>
         <div class="footer-links">
           <h4>Solutions</h4>
           <ul>
+            <li><a href="#solutions">AI Agent Development</a></li>
+            <li><a href="#solutions">Workflow Automation</a></li>
+            <li><a href="#solutions">RAG Knowledge Agents</a></li>
             <li><a href="smart-waste.html">Smart Waste Management</a></li>
-            <li><a href="ai-solutions.html">Elvira AI Solutions</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Use Cases</h4>
+          <ul>
+            <li><a href="#use-cases">Customer Support</a></li>
+            <li><a href="#use-cases">Sales Intelligence</a></li>
+            <li><a href="#use-cases">Document Processing</a></li>
+            <li><a href="#use-cases">Business Analytics</a></li>
           </ul>
         </div>
         <div class="footer-contact">
-          <h4>Contact Us</h4>
+          <h4>Contact</h4>
           <p>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            Wadi makkah, makkah, Saudi Arabia
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            The Garage, Riyadh, Saudi Arabia
           </p>
           <p>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             <a href="mailto:sales@elvirasa.com">sales@elvirasa.com</a>
           </p>
           <div class="social-links">
-            <a href="https://www.linkedin.com/company/elvira-technology/" class="social-link" target="_blank">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
+            <a href="https://www.linkedin.com/company/elvira-technology/" class="social-link" target="_blank" aria-label="LinkedIn">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             </a>
           </div>
         </div>
       </div>
+      <div class="footer-wordmark">
+        <span>ELVIRA</span>
+      </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Elvira AI. All rights reserved.</p>
+        <p>The Garage, Riyadh, Saudi Arabia</p>
       </div>
     </div>
   </footer>
 
   <script type="module" src="/src/main.js"></script>
-</body>
 
+</body>
 </html>

@@ -29,10 +29,10 @@ if (canvas) {
   geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
   const material = new THREE.PointsMaterial({
-    size: 0.04,
-    color: 0xff8d30, // Elvira Orange
+    size: 0.05,
+    color: 0xff8d30,
     transparent: true,
-    opacity: 0.6
+    opacity: 0.75
   });
 
   const points = new THREE.Points(geometry, material);
@@ -41,9 +41,9 @@ if (canvas) {
   // Lines (Connectors)
   const linesGeometry = new THREE.BufferGeometry();
   const linesMaterial = new THREE.LineBasicMaterial({
-    color: 0x0a192f, // Navy
+    color: 0x3d6fd4,
     transparent: true,
-    opacity: 0.05
+    opacity: 0.18
   });
   const lineMesh = new THREE.LineSegments(linesGeometry, linesMaterial);
   scene.add(lineMesh);
